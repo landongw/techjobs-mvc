@@ -31,6 +31,8 @@ public class ListController {
 
         model.addAttribute("columns", columnChoices);
 
+        System.out.println("print from list");
+
         return "list";
     }
 

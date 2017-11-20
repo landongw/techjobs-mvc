@@ -35,8 +35,15 @@
     </form>
 
     <hr />
-
-    <!-- TODO #2 - Loop over jobs map to display all job fields -->
+    <h2 th:text="'Result(s): ' + ${resultsCount}"></h2>
+    <div th:fragment="list_all">
+        <table th:each = "job : ${jobs}" class="job-listing">
+            <tr th:each = "column : ${job}">
+                <td th:text="${column.key}"></td>
+                <td th:text="${column.value}"></td>
+            </tr>
+        </table>
+    </div>
 
 </div>
 
