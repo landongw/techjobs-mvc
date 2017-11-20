@@ -22,25 +22,23 @@ public class SearchController {
         return "search";
     }
 
-    // TODO #1 - Create handler to process search request and display results
+    // TODO: Modify the view template to keep the previous search field selected when displaying results.
     @RequestMapping(value = "results")
     public String results(Model model, @RequestParam String searchTerm, @RequestParam String searchType) {
         ArrayList<HashMap<String, String>> jobs;
-        if(searchType.equals("all")){
+        if (searchType.equals("all")) {
             jobs = JobData.findByValue(searchTerm);
         }
         else {
             jobs = JobData.findByColumnAndValue(searchType, searchTerm);
         }
 
-        int resultsCount = jobs.size();
+        int resultsCount = 0;
+        resultsCount = jobs.size();
 
-//        model.addAttribute("title", "Search Type: " + searchType + "  Search Term: " + searchTerm);
-//        model.addAttribute("searchTerm", searchTerm);
-//        model.addAttribute("searchType", searchType);
+        model.addAttribute("resultsCount", resultsCount);
         model.addAttribute("columns", ListController.columnChoices);
         model.addAttribute("jobs", jobs);
-        model.addAttribute("resultsCount", resultsCount);
 
         return "search";
     }

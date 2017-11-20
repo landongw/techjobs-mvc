@@ -35,8 +35,8 @@
     </form>
 
     <hr />
-    <h2 th:text="'Result(s): ' + ${resultsCount}"></h2>
     <div th:fragment="list_all">
+        <h2 th:text="${resultsCount != null} ? 'Result(s): ' + ${resultsCount}"></h2>
         <table th:each = "job : ${jobs}" class="job-listing">
             <tr th:each = "column : ${job}">
                 <td th:text="${column.key}"></td>
