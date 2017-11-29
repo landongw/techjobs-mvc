@@ -3,36 +3,15 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="48.75" y="0.0">org.launchcode.models.JobData</node>
-    <node x="234.0" y="565.0">org.launchcode.TechjobsApplication</node>
-    <node x="173.25" y="447.0">org.launchcode.controllers.SearchController</node>
-    <node x="0.0" y="565.0">org.launchcode.controllers.HomeController</node>
-    <node x="0.0" y="256.0">org.launchcode.controllers.ListController</node>
+    <node x="250.0" y="-67.0">org.launchcode.models.JobData</node>
+    <node x="0.0" y="309.0">org.launchcode.controllers.HomeController</node>
+    <node x="0.0" y="405.0">org.launchcode.TechjobsApplication</node>
+    <node x="64.0" y="191.0">org.launchcode.controllers.SearchController</node>
+    <node x="0.0" y="0.0">org.launchcode.controllers.ListController</node>
   </nodes>
   <notes />
-  <edges>
-    <edge source="org.launchcode.controllers.SearchController" target="org.launchcode.controllers.ListController">
-      <point x="-72.0" y="-36.5" />
-      <point x="245.25" y="422.0" />
-      <point x="208.0" y="422.0" />
-      <point x="0.0" y="70.5" />
-    </edge>
-    <edge source="org.launchcode.controllers.ListController" target="org.launchcode.models.JobData">
-      <point x="0.0" y="-70.5" />
-      <point x="208.0" y="231.0" />
-      <point x="183.0" y="231.0" />
-      <point x="-134.25" y="103.0" />
-    </edge>
-    <edge source="org.launchcode.controllers.SearchController" target="org.launchcode.models.JobData">
-      <point x="72.0" y="-36.5" />
-      <point x="389.25" y="422.0" />
-      <point x="426.5" y="422.0" />
-      <point x="426.5" y="231.0" />
-      <point x="451.5" y="231.0" />
-      <point x="134.25" y="103.0" />
-    </edge>
-  </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="480.5" y="280.5" />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="1043.5" y="242.5" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
