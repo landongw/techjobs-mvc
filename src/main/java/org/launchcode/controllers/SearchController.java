@@ -12,6 +12,7 @@ import java.util.HashMap;
 /**
  * Created by LaunchCode, and Landon Wiedenman
  */
+
 @Controller
 @RequestMapping("search")
 public class SearchController {
@@ -22,7 +23,6 @@ public class SearchController {
         return "search";
     }
 
-    // TODO: Modify the view template to keep the previous search field selected when displaying results.
     @RequestMapping(value = "results")
     public String results(Model model, @RequestParam String searchTerm, @RequestParam String searchType) {
         ArrayList<HashMap<String, String>> jobs;
