@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by LaunchCode, and Landon Wiedenman
@@ -25,7 +26,7 @@ public class SearchController {
 
     @RequestMapping(value = "results")
     public String results(Model model, @RequestParam String searchTerm, @RequestParam String searchType) {
-        ArrayList<HashMap<String, String>> jobs;
+        List<HashMap<String, String>> jobs;
         if (searchType.equals("all")) {
             jobs = JobData.findByValue(searchTerm);
         }
